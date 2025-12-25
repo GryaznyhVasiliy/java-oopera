@@ -44,7 +44,7 @@ public class Show {
     }
 
     public void printDirectorInfo() {
-        System.out.println("Информация о режиссёре спектакля " + this.title);
-        this.director.printInfo();
+        System.out.println("Информация о режиссёре спектакля " + title);
+        director.printInfo();
     }
 }
