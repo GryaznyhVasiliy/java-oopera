@@ -7,8 +7,8 @@ public class Theatre {
         Actor actor3 = new Actor("Василиса", "Премудрая", Gender.FEMALE, 177);
         Director director1 = new Director("Кабан", "Кабаныч", Gender.MALE, 100500);
         Director director2 = new Director("Кабаниха", "Кабанычна", Gender.FEMALE, 100500);
-        MusicAuthor musicAuthor = new MusicAuthor("Игорь", "Козлов", Gender.MALE);
-        Choreographer choreographer = new Choreographer("Иван", "Баранов", Gender.MALE);
+        Person musicAuthor = new Person("Игорь", "Козлов", Gender.MALE);
+        Person choreographer = new Person("Иван", "Баранов", Gender.MALE);
 
         Show show =  new Show("Обычный", 120, director1, new ArrayList<>());
         Opera opera =  new Opera("Оперный", 360, director2, new ArrayList<>(), musicAuthor, "текст либретто 1", 5);
@@ -29,5 +29,10 @@ public class Theatre {
 
         opera.printLibrettoText();
         ballet.printLibrettoText();
+
+        // В ТЗ сказано, что функция вывода информации о режиссёре быть должна, а вот использование этой функции нигде не упомянуто О:
+        // show.printDirectorInfo();
+        // opera.printDirectorInfo();
+        // ballet.printDirectorInfo();
     }
 }

@@ -8,9 +8,10 @@ public class Director extends Person {
 
     @Override
     public String toString() {
-        return "Director{" +
-                "name=" + name + ", " +
-                "surname=" + surname +
-                '}';
+        return "Director{" + "name=" + name + ", surname=" + surname + '}';
+    }
+
+    public void printInfo() {
+        System.out.println("name=" + name + ", surname=" + surname);
     }
 }

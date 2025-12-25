@@ -42,4 +42,9 @@ public class Show {
         }
         System.out.println("Актёр с такой фамилией отсутствует");
     }
+
+    public void printDirectorInfo() {
+        System.out.println("Информация о режиссёре спектакля " + this.title);
+        this.director.printInfo();
+    }
 }
